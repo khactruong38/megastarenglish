@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Số ngẫu nhiên từ 1 đến 10</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+
+        #random-number {
+            font-size: 24px;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Số ngẫu nhiên từ 1 đến 10</h1>
+    <p id="random-number"></p>
+
+    <script>
+        // Hàm để tạo số ngẫu nhiên từ 1 đến 10
+        function generateRandomNumber() {
+            return Math.floor(Math.random() * 10) + 1;
+        }
+
+        // Lấy thẻ p để hiển thị số ngẫu nhiên
+        const randomNumberElement = document.getElementById('random-number');
+
+        // Gán số ngẫu nhiên vào thẻ p
+        randomNumberElement.textContent = generateRandomNumber();
+    </script>
+</body>
+</html>
